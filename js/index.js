@@ -94,7 +94,13 @@ var app = {
         var img = document.createElement('img');
         img.src = imageURI;
         img.dataset.originalsrc = imageURI;
-
+        
+        var imgContainer=document.createElement('div');
+        var imgBuy=document.createElement('button');
+        imgBuy.value='Купить';
+                        
+        imgContainer.appendChild(img);
+        imgContainer.appendChild(imgBuy);
 
         // Grab the coords
         navigator.geolocation.getCurrentPosition(
@@ -115,7 +121,7 @@ var app = {
         
         
         
-        polaroids.appendChild(img);
+        polaroids.appendChild(imgContainer);
         
     },
 

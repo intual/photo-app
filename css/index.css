@@ -153,7 +153,7 @@ h1 {
 }
 
 .polaroid-images {
-    position: fixed;
+    position: relative;
     top: 25%;
     left: 25%;
     right: 25%;
